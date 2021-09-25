@@ -8,8 +8,6 @@ public class bankSystem {
 
     public static void main(String[] args) {
 
-
-
         Scanner obj = new Scanner(System.in);
 
         List<Customer> customers = new ArrayList();
@@ -202,7 +200,7 @@ class Customer{
     }
 
     public void newAccount(){
-        if(accounts.size()<=2)
+        if(accounts.size()<=1)
             this.accounts.add(new Account(this.cnic+Integer.toString(accounts.size()+1)));
         else
             System.out.println("users can only have a maximum of 2 accounts");
